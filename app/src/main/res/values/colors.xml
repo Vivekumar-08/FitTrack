@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="draknavy">#1C1C1C</color>
+    <color name="pink">#FF69B4</color>
+    <color name="purple">#6A0DAD</color>
+    <color name="LightPurple">#C084FC</color>
+    <color name="DeeperPurple">#8A2BE2</color>
+    <color name="drakPurpleBlue">#0A081B</color>
+    <color name="LightGrey">#B0B0B0</color>
+    <color name="transparent">#00B0B0B0</color>
+</resources>
