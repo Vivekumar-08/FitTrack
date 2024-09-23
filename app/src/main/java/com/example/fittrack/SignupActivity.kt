@@ -87,7 +87,7 @@ class SignupActivity : AppCompatActivity() {
                             finish()  
                         } else {
                             // Check again after 5 seconds
-                            handler.postDelayed(this, 5000)
+                            handler.postDelayed(this, 3000)
                         }
                     }
                 }
