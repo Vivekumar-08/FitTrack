@@ -87,12 +87,12 @@ class SignupActivity : AppCompatActivity() {
                             finish()  
                         } else {
                             // Check again after 5 seconds
-                            handler.postDelayed(this, 3000)
+                            handler.postDelayed(this, 4000)
                         }
                     }
                 }
             }
         }
-        handler.post(runnable) // Start the check
+        handler.post(runnable)
     }
 }
