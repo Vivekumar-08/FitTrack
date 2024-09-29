@@ -23,6 +23,7 @@ class MainActivity : AppCompatActivity() {
         binding.buttonBMI.setOnClickListener {
             val intent = Intent(this, BMI_Activity::class.java)
             startActivity(intent)
+            finish()
         }
     }
 }

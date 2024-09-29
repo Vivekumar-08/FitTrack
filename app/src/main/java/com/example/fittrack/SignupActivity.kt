@@ -46,7 +46,6 @@ class SignupActivity : AppCompatActivity() {
                                 user?.sendEmailVerification()?.addOnCompleteListener { verificationTask ->
                                     if (verificationTask.isSuccessful) {
                                         Toast.makeText(this, "Verification email sent. Please check your inbox.", Toast.LENGTH_SHORT).show()
-                                        // Start checking for email verification
                                         startEmailVerificationCheck(email)
                                     } else {
                                         binding.signUpUserEmail.error = "Failed to send verification email. Please try again."
@@ -81,12 +80,10 @@ class SignupActivity : AppCompatActivity() {
                     if (task.isSuccessful) {
                         if (user.isEmailVerified) {
                             Toast.makeText(this@SignupActivity, "Email verified!", Toast.LENGTH_SHORT).show()
-                            // Navigate to the next activity (e.g., MainActivity)
-                            val intent = Intent(this@SignupActivity, MainActivity::class.java)
+                            val intent = Intent(this@SignupActivity, Signup1Activity::class.java)
                             startActivity(intent)
                             finish()  
                         } else {
-                            // Check again after 5 seconds
                             handler.postDelayed(this, 4000)
                         }
                     }

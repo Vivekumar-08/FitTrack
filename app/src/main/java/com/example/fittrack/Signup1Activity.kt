@@ -43,6 +43,7 @@ class Signup1Activity : AppCompatActivity() {
                     putExtra("password", password)
                 }
                 startActivity(intent)
+                finish()
             }
             else{
                 if (name.isEmpty()){
